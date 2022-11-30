@@ -16,6 +16,7 @@ public class MyWebClient {
             product.setName(getNameFromUrl(pageHtml));
             product.setPrice(getPriceFromUrl(pageHtml));
             product.setImgUrl(getImgFromUrl(pageHtml));
+            product.setUrl(searchUrl);
 
         } catch (Exception e) {
             e.printStackTrace();
